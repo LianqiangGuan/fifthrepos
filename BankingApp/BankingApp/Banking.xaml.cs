@@ -113,7 +113,7 @@ namespace BankingApp
 
                     case "SavingsRadioButtonOn&InvestmentRadioButtonOn":   // from Saving to Investment
                         fromBalance = fromBalance - amountTransfer;
-                        cSavingsBalance = fromBalance;
+                        cSavingsBalance = fromBalance-30;
                         fromBalanceLabel.Content = cSavingsBalance.ToString("C");
 
                         toBalance = toBalance + amountTransfer;
