@@ -106,7 +106,7 @@ namespace BankingApp
                         cSavingsBalance = fromBalance;
                         fromBalanceLabel.Content = cSavingsBalance.ToString("C");
 
-                        toBalance = toBalance + amountTransfer;
+                        toBalance = toBalance + amountTransfer-2;
                         cChequeBalance = toBalance;
                         toBalanceLabel.Content = cChequeBalance.ToString("C");
                         break;
